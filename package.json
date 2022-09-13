@@ -1,4 +1,5 @@
-{"homepage": "https://github.com/Chukwu12/weather-app-react.git",
+{
+  "homepage": "https://github.com/Chukwu12/weather-app-react.git",
   "name": "weather-app-react",
   "version": "0.1.0",
   "private": true,
