@@ -19,7 +19,17 @@ function App() {
     }
   }
 
-  
+  // function setBackground(weather) {
+  //   if (weather == "Rain") {
+  //     background.src = "./resources/rainy-weather.jpg";
+  //   } else if (weather == "Snow") {
+  //     background.src = "./resources/snowy-weather.jpg";
+  //   } else if (weather == "Clear") {
+  //     background.src = "./resources/sunny-weather.jpg";
+  //   } else if (weather == "Clouds") {
+  //     background.src = "./resources/cloudy-weather.jpg";
+  //   }
+  // }
 
 
 
