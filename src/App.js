@@ -39,7 +39,15 @@ function App() {
   };
 
   return (
-    <div className="app" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div
+    className="app"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover', // Adjust background image size
+      backgroundRepeat: 'no-repeat', // Prevent background image repetition
+      backgroundPosition: 'center', // Center the background image
+    }}
+  >
       <div className="search">
         <input
           value={location}
