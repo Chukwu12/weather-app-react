@@ -13,7 +13,7 @@ OpenWeatherMap API
 
 ## Installation
 1. Clone the repository: 
-git clone https://github.com/yourusername/react-weather-app.git
+git clone [https://github.com/yourusername/react-weather-app.git](https://github.com/Chukwu12/weather-app-react.git)
 2. Navigate to the project directory:
 cd react-weather-app
 3.Install dependencies:
