@@ -84,6 +84,16 @@ h1 {
   justify-content: space-between;
 }
 
+.temp{
+  display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temp img{
+  object-fit: contain;
+}
+
 .app .top {
   width: 100%;
   margin: 1rem auto;
