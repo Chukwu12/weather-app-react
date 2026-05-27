@@ -1,36 +1,52 @@
 # React Weather App
-This is a simple weather application built with React that allows users to search for weather information by location. The app fetches data from the OpenWeatherMap API and dynamically changes the background image based on the weather condition.
+
+Modern React weather dashboard with live current conditions, hourly forecast cards, weather-based backgrounds, and unit toggle support.
 
 ## Features
-Weather Search: Users can enter a location in the input field and press Enter to search for weather information.
-Dynamic Background: The background image changes based on the weather condition received from the API response.
-Weather Details: Displays temperature, weather description, feels like temperature, humidity, and wind speed.
 
-## Technologies Used
-React
-Axios (for API requests)
-OpenWeatherMap API
+- Search weather by city name
+- Dynamic weather background imagery
+- Hourly forecast snapshots with rain chance
+- Celsius/Fahrenheit toggle
+- Responsive UI for desktop and mobile
 
-## Installation
-1. Clone the repository: 
-git clone [https://github.com/yourusername/react-weather-app.git](https://github.com/Chukwu12/weather-app-react.git)
-2. Navigate to the project directory:
-cd react-weather-app
-3.Install dependencies:
-npm install
-4.Run the app:
-npm start
-5.Open your browser and navigate to http://localhost:3000 to view the app.
+## Tech Stack
 
-## Usage
-Enter a location (e.g., city name) in the input field.
-Press Enter to search for weather information.
-The app will display the current weather details for the specified location.
+- React (Create React App)
+- Axios
+- OpenWeather API
 
-##Credits
-Weather data provided by OpenWeatherMap
-Background images sourced from Unsplash
+## Local Setup
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Clone the repository:
+	git clone https://github.com/Chukwu12/weather-app-react.git
+2. Enter the project folder:
+	cd weather-app-react
+3. Install dependencies:
+	npm install
+4. Add environment variable in a .env file:
+	REACT_APP_API_KEY=your_openweather_api_key
+5. Start the app:
+	npm start
+6. Open http://localhost:3000
+
+## Netlify Deployment (Step by Step)
+
+This repository is now configured for Netlify using [netlify.toml](netlify.toml).
+
+1. Push your latest code to GitHub.
+2. In Netlify, click Add new site -> Import an existing project.
+3. Connect GitHub and choose Chukwu12/weather-app-react.
+4. Build settings should auto-detect:
+	- Build command: npm run build
+	- Publish directory: build
+5. In Netlify Site settings -> Environment variables, add:
+	- REACT_APP_API_KEY = your_openweather_api_key
+6. Trigger deploy.
+7. Open the Netlify URL after deploy completes.
+
+## Notes
+
+- SPA routing fallback is configured in [netlify.toml](netlify.toml) with a redirect to index.html.
+- If you previously used GitHub Pages, no gh-pages script is required anymore.
 
