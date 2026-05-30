@@ -1,52 +1,90 @@
-# React Weather App
+# Weather App React
 
-Modern React weather dashboard with live current conditions, hourly forecast cards, weather-based backgrounds, and unit toggle support.
+<p align="center">
+	A modern React weather dashboard with real-time conditions, hourly forecast cards, dynamic backgrounds, and unit switching.
+</p>
 
-## Features
+<p align="center">
+	<a href="https://oniceweatherapp.netlify.app/">
+		<img src="https://img.shields.io/website?url=https%3A%2F%2Foniceweatherapp.netlify.app%2F&up_message=Live%20Demo&down_message=Offline&label=App&logo=netlify" alt="Live Demo" />
+	</a>
+	<br />
+	<img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" alt="React 18" />
+	<img src="https://img.shields.io/badge/Create%20React%20App-5.0.1-09D3AC?logo=createreactapp&logoColor=white" alt="Create React App" />
+	<img src="https://img.shields.io/badge/Axios-HTTP%20Client-5A29E4?logo=axios&logoColor=white" alt="Axios" />
+	<img src="https://img.shields.io/badge/OpenWeather-API-EB6E4B?logo=openweathermap&logoColor=white" alt="OpenWeather API" />
+	<img src="https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify&logoColor=white" alt="Netlify" />
+</p>
 
-- Search weather by city name
-- Dynamic weather background imagery
-- Hourly forecast snapshots with rain chance
-- Celsius/Fahrenheit toggle
-- Responsive UI for desktop and mobile
+<p align="center">
+	<a href="https://oniceweatherapp.netlify.app/">View Live App</a>
+</p>
+
+## Highlights
+
+- 🔎 Search weather by city name
+- 🌤️ Dynamic weather-based background imagery
+- 🕒 Hourly forecast snapshots with rain chance
+- 🌡️ Celsius/Fahrenheit unit toggle
+- 📱 Responsive layout for desktop and mobile
 
 ## Tech Stack
 
-- React (Create React App)
+- React 18 (Create React App)
 - Axios
 - OpenWeather API
+- Netlify (deployment)
 
-## Local Setup
+## Quick Start
 
-1. Clone the repository:
-	git clone https://github.com/Chukwu12/weather-app-react.git
-2. Enter the project folder:
-	cd weather-app-react
-3. Install dependencies:
-	npm install
-4. Add environment variable in a .env file:
-	REACT_APP_API_KEY=your_openweather_api_key
-5. Start the app:
-	npm start
-6. Open http://localhost:3000
+### 1. Clone and install
 
-## Netlify Deployment (Step by Step)
+```bash
+git clone https://github.com/Chukwu12/weather-app-react.git
+cd weather-app-react
+npm install
+```
 
-This repository is now configured for Netlify using [netlify.toml](netlify.toml).
+### 2. Add environment variables
+
+Create a `.env` file in the project root:
+
+```bash
+REACT_APP_API_KEY=your_openweather_api_key
+```
+
+### 3. Run locally
+
+```bash
+npm start
+```
+
+Open `http://localhost:3000`.
+
+## Scripts
+
+```bash
+npm start    # Run development server
+npm run build # Build production bundle
+npm test     # Run tests
+```
+
+## Netlify Deployment
+
+This repository is already configured for Netlify using [netlify.toml](netlify.toml).
 
 1. Push your latest code to GitHub.
-2. In Netlify, click Add new site -> Import an existing project.
-3. Connect GitHub and choose Chukwu12/weather-app-react.
-4. Build settings should auto-detect:
-	- Build command: npm run build
-	- Publish directory: build
-5. In Netlify Site settings -> Environment variables, add:
-	- REACT_APP_API_KEY = your_openweather_api_key
-6. Trigger deploy.
-7. Open the Netlify URL after deploy completes.
+2. In Netlify: `Add new site` -> `Import an existing project`.
+3. Connect GitHub and select `Chukwu12/weather-app-react`.
+4. Confirm build settings:
+	 - Build command: `npm run build`
+	 - Publish directory: `build`
+5. In `Site settings` -> `Environment variables`, add:
+	 - `REACT_APP_API_KEY=your_openweather_api_key`
+6. Trigger deploy and open your Netlify URL.
 
 ## Notes
 
-- SPA routing fallback is configured in [netlify.toml](netlify.toml) with a redirect to index.html.
-- If you previously used GitHub Pages, no gh-pages script is required anymore.
+- SPA fallback redirect is configured in [netlify.toml](netlify.toml): all routes point to `index.html`.
+- No `gh-pages` setup is needed when deploying via Netlify.
 
